@@ -1,10 +1,10 @@
 /*该文件为信号量结构源文件*/
 
-#include <defs.h>//???
+#include <libs/ctype.h>
 #include <wait.h>
 #include <atomic.h>//???
-#include <sem.h> //???
-#include <proc.h>
+#include <sem.h>
+//#include <proc.h>
 #include <sync.h>
 #include <assert.h>
 

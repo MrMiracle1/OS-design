@@ -3,7 +3,7 @@
 #ifndef __KERN_SYNC_SEM_H__
 #define __KERN_SYNC_SEM_H__
 
-#include<defs.h>
+#include<libs/stddef.h>
 #include<atomic.h>
 #include<wait.h>
 

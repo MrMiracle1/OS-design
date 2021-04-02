@@ -2,7 +2,8 @@
 #ifndef __KERN_SYNC_SYNC_H__
 #define __KERN_SYNC_SYNC_H__
 
-#include <x86.h>
+#include <libs/asm/system.h>
+#include <mm/mmu.h>
 
 static inline bool __intr_save(void){
     if(read_eflags()&FL_IF){ //查询EFLAGS寄存器，标志位能响应可屏蔽中断
