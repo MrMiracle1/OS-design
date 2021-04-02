@@ -12,13 +12,14 @@ void __noreturn __panic(const char *file, int line, const char *fmt, ...);
 #define panic(...)                                      \
     __panic(__FILE__, __LINE__, __VA_ARGS__)
 
+/*若表达式不成立调用panic，程序终止 ???*/
 #define assert(x)                                       \
     do {                                                \
-        if (!(x)) {                                     \
+        if (!(x)) {                                    \
             panic("assertion failed: %s", #x);          \
         }                                               \
-    } while (0)
-
+    } while (0) 
+//???循环 
 // static_assert(x) will generate a compile-time error if 'x' is false.
 #define static_assert(x)                                \
     switch (x) { case 0: case (x): ; }

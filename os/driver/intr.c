@@ -4,9 +4,9 @@
 #include <libs/asm/system.h>
 
 void intr_enable(){
-    sti();
+    sti(); //汇编指令，允许中断发生
 }
 
 void intr_disable(){
-    cli();
+    cli(); //汇编指令，禁止中断发生
 }
